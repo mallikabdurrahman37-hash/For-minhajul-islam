@@ -1,0 +1,209 @@
+/* Google Fonts Imported in HTML (Bodoni Moda & Montserrat) */
+
+:root {
+    --rose-gold: #c29b7a;
+    --rose-gold-dark: #a87b5a;
+    --text-dark: #4a3f3a;
+    --bg-light: #faf5ef;
+    --divider-color: rgba(194, 155, 122, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Tumhara silk background yahan use ho raha hai */
+    background-image: url('bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Mobile-First Main Container */
+.main-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: rgba(255, 255, 255, 0.6); /* Slight transparency taaki silk dikhe */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Status Bar */
+.top-bar {
+    background: linear-gradient(135deg, var(--rose-gold-dark), var(--rose-gold));
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Niche wali 4 lines nayi add ki hain isko top par fix karne ke liye */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Header / Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.gif-container {
+    margin-bottom: 10px;
+}
+
+/* Header Mocha Styling */
+#mocha-header-gif {
+    width: 90px;
+    opacity: 0.9;
+    /* Thoda niche shift kiya taaki crown ke paas lage */
+    transform: translateY(15px); 
+}
+
+/* Crown Styling */
+.crown-container {
+    margin-bottom: 15px;
+}
+
+#crown-icon {
+    width: 70px;
+    opacity: 0.85;
+}
+
+/* Main Typography */
+.main-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 36px;
+    color: var(--rose-gold-dark);
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* Luxury Dividers */
+.luxury-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--divider-color), transparent);
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Wish Section (Marble Background) */
+.wish-section {
+    /* Tumhara marble background yahan use ho raha hai */
+    background-image: url('bg-wish.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid var(--divider-color);
+    border-bottom: 1px solid var(--divider-color);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.poetic-text {
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.happy-bday-text {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 22px;
+    color: var(--rose-gold-dark);
+    margin: 25px 0;
+    letter-spacing: 1px;
+}
+
+/* Wish Mocha Styling */
+#mocha-wish-gif {
+    width: 110px;
+    margin-top: 25px;
+    opacity: 0.95;
+}
+
+/* Tribute Section */
+.tribute-section {
+    text-align: center;
+    padding: 30px 20px 50px;
+}
+
+.tribute-text {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0.85;
+}
+
+/* Toast/Champagne Area */
+.toast-container {
+    margin: 30px 0;
+}
+
+#toast-icon {
+    width: 25px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.toast-text {
+    font-size: 13px;
+}
+
+/* Footer Mocha Styling */
+#mocha-footer-gif {
+    width: 130px;
+    margin: 20px 0;
+}
+
+.level-text {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 16px;
+    color: var(--rose-gold-dark);
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Key Icon */
+.key-container {
+    margin-top: 20px;
+}
+
+#level-key-icon {
+    width: 35px;
+    opacity: 0.8;
+}
+
+/* Simple Fade-in Animation for smooth loading */
+.main-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
